@@ -44,7 +44,7 @@ int main(void)
 	while(n<100)
 	for(n=0;n<100;n++)
 	{
-		gagnante[6]= {tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero()};
+		
 		n++;
 	
 		
@@ -62,8 +62,5 @@ int main(void)
 		
 	  cpt=0; 	
 	}
-	   int debug=2;
+	   	int debug=2; 
 }
-	
-
-
