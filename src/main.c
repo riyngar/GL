@@ -3,9 +3,9 @@
 
 #include "TP_lib_suite.h"
 
-int main(void)
+/*int main(void)
 {
-	unsigned char i,k,gain=0;
+	unsigned char i,j,gain=0;
 	
 	 void initialiserTirage();
 	short tirerNumero();
@@ -18,9 +18,9 @@ int main(void)
 	
 	for (i=0;i<6;i++)
 	 {
-		 for (k=0;k<6;k++)
+		 for (j=0;j<6;j++)
 		{
-			if(gagnante[i] == joueur[k])
+			if(gagnante[i] == joueur[j])
 			{
 				gain++;
 				
@@ -30,4 +30,40 @@ int main(void)
 	 }
 	
   int debug=0; 
+}*/
+int main(void)
+{
+	initialiserTirage(); 
+	short joueur[6]={2,4,6,8,10,12};
+					 
+	short gagnante[6]={tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero()};
+	short i=0,j=0,cpt=0,gain=0,n=0;
+
+	
+	
+	while(n<100)
+	for(n=0;n<100;n++)
+	{
+		gagnante[6]= {tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero(),tirerNumero()};
+		n++;
+	
+		
+		for(i=0;i<6;i++)
+		{
+			for(j=0;j<6;j++)
+				{
+					if(joueur[j]==gagnante[i])
+						cpt++;
+				}
+					if(cpt>gain)
+						if(gain<cpt)
+						gain=cpt;
+		}
+		
+	  cpt=0; 	
+	}
+	   int debug=2;
 }
+	
+
+
