@@ -62,5 +62,5 @@ int main(void)
 		
 	  cpt=0; 	
 	}
-	   	int debug=2; 
+	   	int debug=2;//je met ça pour voir les valeurs des variable
 }
