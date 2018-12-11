@@ -1,3 +1,4 @@
+#include <userint.h>
 #include <ansi_c.h>
 #include <stdint.h>
 //  Copyright (c) 2018 Antoine Tran Tan
@@ -26,12 +27,20 @@ int main(void)
 	printf("variable c ?\n");
 	scanf ("%d",&c);
 
-		if (0<=c && c<=7)
-		{ R=( 10 * a + b)*pow(10,c);
-			printf(" la valeur de resistance est de %d",R);}
-		else 
-		{R=-1;
-			 printf(" vous avez faux %d",R);}
+		
+	if(a<10 && b<10)
+	{		if (0<=c && c<=7)
+				{ R=( 10 * a + b)*pow(10,c);
+					printf(" la valeur de resistance est de %d ohms ",R);
+				}
+			else 
+			{		R=-1;
+				 printf(" vous avez faux %d",R);
+			}
+	}
+	else 
+		R=-1;
+		MessagePopup("erreur"," valeur a ou b fausse(R=-1) ");
 
  return 0;
 }
