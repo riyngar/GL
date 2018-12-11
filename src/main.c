@@ -39,7 +39,7 @@ int main(void)
 			}
 	}
 	else 
-		R=-1;
+		
 		MessagePopup("erreur"," valeur a ou b fausse(R=-1) ");
 
  return 0;
